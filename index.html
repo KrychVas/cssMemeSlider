@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="slider-wrapper">
+    <input type="radio" name="meme-slider" id="slide-1" checked>
+    <input type="radio" name="meme-slider" id="slide-2">
+    <input type="radio" name="meme-slider" id="slide-3">
+    <input type="radio" name="meme-slider" id="slide-4">
+
+    <div class="slides-viewport">
+      <div class="slides-tape">
+        <div class="slide"><img src="img/name1.jpg" alt="Meme 1: Broken CSS"></div>
+        <div class="slide"><img src="img/name2.webp" alt="Meme 2: CSS Expert"></div>
+        <div class="slide"><img src="img/name3.jpg" alt="Meme 3: Thanks for Fork"></div>
+        <div class="slide"><img src="img/name4.jpg" alt="Meme 4: Winnie Pooh IIFE"></div>
+      </div>
+    </div>
+
+    <div class="slider-footer">
+      <div class="captions-viewport">
+        <div class="captions-tape">
+          <div class="caption"><p>When you add one new line of CSS and the whole layout breaks</p></div>
+          <div class="caption"><p>Centering a div on the first try without looking at StackOverflow</p></div>
+          <div class="caption"><p>Steal someone else's code? No, man, thanks for the fork!</p></div>
+          <div class="caption"><p>The evolution of writing functions in JavaScript</p></div>
+        </div>
+      </div>
+
+      <div class="controls-container">
+        <label for="slide-1" class="control-hitbox"><span class="control-dot"></span></label>
+        <label for="slide-2" class="control-hitbox"><span class="control-dot"></span></label>
+        <label for="slide-3" class="control-hitbox"><span class="control-dot"></span></label>
+        <label for="slide-4" class="control-hitbox"><span class="control-dot"></span></label>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

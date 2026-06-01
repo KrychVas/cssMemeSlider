@@ -142,3 +142,48 @@ input[type="radio"] {
 #slide-2:checked ~ .slider-footer .captions-viewport .captions-tape { transform: translateX(-25%); }
 #slide-3:checked ~ .slider-footer .captions-viewport .captions-tape { transform: translateX(-50%); }
 #slide-4:checked ~ .slider-footer .captions-viewport .captions-tape { transform: translateX(-75%); }
+
+/* Інтерактивні стани (Hover та Active) */
+.control-hitbox:hover .control-dot {
+  border-color: #5271ff;
+  transform: scale(1.1);
+}
+
+.control-hitbox:active .control-dot {
+  transform: scale(0.9);
+}
+
+/* Стилізація активної точки (індикатор ковзання) */
+#slide-1:checked ~ .slider-footer .control-hitbox[for="slide-1"] .control-dot { background-color: #5271ff; border-color: #5271ff; }
+#slide-2:checked ~ .slider-footer .control-hitbox[for="slide-2"] .control-dot { background-color: #5271ff; border-color: #5271ff; }
+#slide-3:checked ~ .slider-footer .control-hitbox[for="slide-3"] .control-dot { background-color: #5271ff; border-color: #5271ff; }
+#slide-4:checked ~ .slider-footer .control-hitbox[for="slide-4"] .control-dot { background-color: #5271ff; border-color: #5271ff; }
+
+/* ==========================================================================
+   7. Адаптивний дизайн (Мобільна версія)
+   ========================================================================== */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .slider-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  /* Точки стають вище за текст БЕЗ порушення потоку документа (position: static) */
+  .controls-container {
+    order: 1;
+    align-self: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .captions-viewport {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+}

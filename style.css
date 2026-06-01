@@ -1,0 +1,93 @@
+/* ==========================================================================
+   1. Скидання стилів (Базовий Reset)
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #1e1e24;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Приховуємо радіокнопки, але залишаємо їх функціональними */
+input[type="radio"] {
+  display: none;
+}
+
+/* ==========================================================================
+   2. Головний контейнер слайдера
+   ========================================================================== */
+.slider-wrapper {
+  width: 100%;
+  max-width: 45rem; /* Обмежує максимальну ширину на десктопі */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ==========================================================================
+   3. Візуальна область для зображень (Viewport)
+   ========================================================================== */
+.slides-viewport {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: #000000;
+}
+
+.slides-tape {
+  display: flex;
+  width: 400%; /* 4 слайди по 100% кожен */
+}
+
+.slide {
+  width: 25%;
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   4. Нижній блок (Підписи + Елементи керування)
+   ========================================================================== */
+.slider-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.captions-viewport {
+  flex: 1;
+  overflow: hidden;
+}
+
+.captions-tape {
+  display: flex;
+  width: 400%;
+}
+
+.caption {
+  width: 25%;
+}
+
+.caption p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #e0e0e0;
+}

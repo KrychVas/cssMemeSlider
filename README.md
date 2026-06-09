@@ -1,4 +1,4 @@
-# RSS pure CSS Meme Slider
+# CSS Meme Slider
 
 ## 📝 Project Description
 This project was built as part of the **JS/FE Summer bootcamp 2026Q2** course by RS School. It is a fully responsive meme slider created exclusively using **HTML5 and CSS3**, without a single line of JavaScript. The slide switching logic and text animations are driven entirely by CSS selectors and radio buttons (`<input type="radio">`).
